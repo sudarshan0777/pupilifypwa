@@ -5,7 +5,13 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Student Dashboard</title>
+      <!-- PWA essentials -->
 <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f0426e">
+<link rel="apple-touch-icon" href="icons/icon-192x192.png">
+<meta name="description" content="Pupilify – Personalized student dashboard for K-12 learners.">
+
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
@@ -162,4 +168,13 @@
 </div>
 </nav>
 </div>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker Registered', reg))
+      .catch(err => console.error('Service Worker Error', err));
+  }
+</script>
+
+      
 </body></html>
