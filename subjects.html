@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Learning Path</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f0426e",
+              "background-light": "#FFF8F9",
+              "background-dark": "#221015",
+              "card-light": "#ffffff",
+              "card-dark": "#3a1c25",
+              "text-light": "#4A4A4A",
+              "text-dark": "#f5e9ec",
+              "text-muted-light": "#89616b",
+              "text-muted-dark": "#c7a8b0",
+              "border-light": "#fce9ed",
+              "border-dark": "#502f3a",
+              "accent": "#FEC89A",
+              "success": "#A8D8B9",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4 pb-2 justify-between">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Your Learning Path</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 text-text-light dark:text-text-dark">
+<img alt="User profile avatar" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIahwvDrbK1asYJ6MXpAgd6L8JOIpzm0ID0uXsGSp2m3dlKH5KhGZBShU8qf-WK70-xjL8VvrzpPyToeK5ie9RZGFHS2FTS4FToq2Ew66ECfp7jWT8sG8gL96FT_pDeMKk13gXevph2MrG3BCjYV9Mtf4ruJaR1A92RKbJkFHe0lNheCUvo0pIHI6hyrpqi3jwYYg70759jDjYHSrla8QWdZojYVmtKc6RStNv_-l6xfvxi39BHbAAcFb63RXETGBpUJGpbN77PmH8"/>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 pb-24">
+<!-- AI Welcome Banner Card -->
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl my-4">
+<div class="flex items-center justify-between gap-4 rounded-xl">
+<div class="flex flex-col gap-1 flex-[2_2_0px]">
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Ready to learn, Alex?</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Here are some topics picked just for you!</p>
+</div>
+<div class="w-24 h-24 bg-center bg-no-repeat bg-contain rounded-xl flex-1" data-alt="Friendly illustrated AI robot mascot waving" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtODHjRUahAid5MGNv7Cdq3wLBDVlFORsG3AbFSEDGdWpsuMdmcIZc7FsLhh2voOIRYxGAzXG3PqZul4qkOGyX5vYPCY7NCSRFaACyxFu7QfAlnfOJcNe1dQ5F9yeyFrH1QotM21bdFUoIGWWiyqBU5d9skUjmHy180yyHRSmJNBzfsz9N5-EZ5zjBeVOkSiQaMxakuPpiqMBWpJu57-kKHk9Ww1GkSQBDjda0GKleHSutaI3czannkmkYz0qWvEqz9sy4dEedRqJ6");'></div>
+</div>
+</div>
+<!-- Progress Summary -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Your Progress</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="flex min-w-[158px] flex-col gap-4 rounded-xl p-6 border bg-card-light dark:bg-card-dark border-border-light dark:border-border-dark col-span-1 sm:col-span-1 items-center justify-center">
+<div class="relative h-24 w-24">
+<svg class="h-full w-full" height="36" viewbox="0 0 36 36" width="36" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-current text-border-light dark:text-border-dark" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-current text-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="35" stroke-linecap="round" stroke-width="3" transform="rotate(-90 18 18)"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-xl font-bold text-text-light dark:text-text-dark">65%</span>
+</div>
+</div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-medium leading-normal text-center">Overall Progress</p>
+</div>
+<div class="col-span-1 sm:col-span-2 grid grid-cols-2 gap-4">
+<div class="flex min-w-0 flex-1 flex-col justify-center gap-2 rounded-xl p-4 sm:p-6 border bg-card-light dark:bg-card-dark border-border-light dark:border-border-dark">
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-medium leading-normal">Topics Mastered</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">12</p>
+</div>
+<div class="flex min-w-0 flex-1 flex-col justify-center gap-2 rounded-xl p-4 sm:p-6 border bg-card-light dark:bg-card-dark border-border-light dark:border-border-dark">
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-medium leading-normal">Time Spent</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">8h 30m</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Up Next Card -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Up Next</h2>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl flex flex-col sm:flex-row items-center gap-4 border border-border-light dark:border-border-dark">
+<div class="flex h-20 w-20 items-center justify-center rounded-lg bg-primary/20 flex-shrink-0">
+<span class="material-symbols-outlined text-4xl text-primary">percent</span>
+</div>
+<div class="flex-grow text-center sm:text-left">
+<p class="text-xs text-primary font-semibold">MATH LESSON</p>
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-tight mt-1">Video: Intro to Fractions</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Learn the basics of numerators and denominators.</p>
+</div>
+<button class="flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-base font-bold text-[#4A4A4A] transition-transform hover:scale-105 active:scale-95">
+                        Start Learning
+                    </button>
+</div>
+</section>
+<!-- Learning Path Sections -->
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Strengthen Your Math Skills</h2>
+<div class="flex flex-col gap-3">
+<!-- Resource Card 1 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl flex items-center gap-4 border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 flex-shrink-0">
+<span class="material-symbols-outlined text-primary">quiz</span>
+</div>
+<div class="flex-grow">
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Quiz: Multiplication</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">5 min</p>
+</div>
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-success">
+<span class="material-symbols-outlined text-white text-lg">check</span>
+</div>
+</div>
+<!-- Resource Card 2 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl flex items-center gap-4 border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 flex-shrink-0">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+</div>
+<div class="flex-grow">
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Video: What are Decimals?</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">10 min</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-8">Explore Science</h2>
+<div class="flex flex-col gap-3">
+<!-- Resource Card 3 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl flex items-center gap-4 border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 flex-shrink-0">
+<span class="material-symbols-outlined text-primary">science</span>
+</div>
+<div class="flex-grow">
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Game: The Water Cycle</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">15 min</p>
+</div>
+</div>
+<!-- Resource Card 4 -->
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl flex items-center gap-4 border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 flex-shrink-0">
+<span class="material-symbols-outlined text-primary">article</span>
+</div>
+<div class="flex-grow">
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Article: Our Solar System</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">8 min</p>
+</div>
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-success">
+<span class="material-symbols-outlined text-white text-lg">check</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm border-t border-border-light dark:border-border-dark p-2">
+<div class="flex justify-around max-w-md mx-auto">
+<a class="flex flex-col items-center justify-center text-center text-primary w-1/4 p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-bold mt-1">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-center text-text-muted-light dark:text-text-muted-dark w-1/4 p-2 rounded-lg hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-xs font-medium mt-1">Subjects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-center text-text-muted-light dark:text-text-muted-dark w-1/4 p-2 rounded-lg hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">emoji_events</span>
+<span class="text-xs font-medium mt-1">Awards</span>
+</a>
+<a class="flex flex-col items-center justify-center text-center text-text-muted-light dark:text-text-muted-dark w-1/4 p-2 rounded-lg hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="text-xs font-medium mt-1">Help</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>
