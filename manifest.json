@@ -1,0 +1,16 @@
+
+{
+  "name": "Pupilify",
+  "short_name": "Pupilify",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFC0CB",
+  "theme_color": "#FF69B4",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
